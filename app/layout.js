@@ -11,7 +11,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
 const APP_NAME = "Quick Notes";
 const APP_DEFAULT_TITLE = "Quick Notes";
 const APP_TITLE_TEMPLATE = "%s | Quick Notes";
@@ -29,7 +28,6 @@ export const metadata = {
     capable: true,
     statusBarStyle: "default",
     title: APP_DEFAULT_TITLE,
-    // startUpImage: [],
   },
   formatDetection: {
     telephone: false,
@@ -55,6 +53,11 @@ export const metadata = {
 
 export const viewport = {
   themeColor: "#FFFFFF",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: "no",
+  viewportFit: "cover",
 };
 
 export default function RootLayout({ children }) {
